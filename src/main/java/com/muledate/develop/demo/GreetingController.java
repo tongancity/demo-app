@@ -15,7 +15,7 @@ public class GreetingController {
 
 	public String greet(@AuthenticationPrincipal OidcUser user) {
 
-		return "welcome " + user.getEmail();
+		return "welcome  " + user.getEmail();
 
 	}
 
