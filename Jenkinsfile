@@ -1,6 +1,7 @@
 pipeline {
 
    agent any
+   triggers { pollSCM('H/1 * * * *') }
    environment {
         OKTA_OAUTH2_ISSUER           = 'https://dev-957490.okta.com/oauth2/default'
         OKTA_OAUTH2_CLIENT_ID        = credentials('OKTA_OAUTH2_CLIENT_ID')
